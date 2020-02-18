@@ -1,13 +1,19 @@
-# fs-xtra
+# 📑 fs-xtra  
+fs extra methods for nodejs
+
+![](https://badgen.net/bundlephobia/min/node-rm)  ![](https://badgen.net/npm/v/node-rm)
+```js
+npm i fs-xtra --save-dev
+```
 
 ### Usage
 ```
-npm i -D fs-xtra
+const { copyFolder, copyFiles, filesIntoOne } = require('fs-xtra');
 ```
 
 ### Methods and examples
 - **copyFiles(arrayOfFiles: Array, writeToConsole?: boolean): void**  
-***Copy files into folder***
+*Copy files into folder*
 ```js
 // writeToConsole by default: false
 const files = [
@@ -21,7 +27,7 @@ copyFiles(files, true);
 ```
 
 - **copyFolder(sourceFolder, destinationFolder, writeToConsole?: boolean): void**  
-***Copy folder files (and subfolders) into another***
+*Copy folder files (and subfolders) into another*
 ```js
 copyFolder('test', 'folder', true);
 // Copy file:  1.css  ->  folder\1.css (console stdout)
@@ -29,7 +35,7 @@ copyFolder('test', 'folder', true);
 ```
 
 - **filesIntoOne(arrayOfFiles: Array<string>, destinatonFile: string): void**  
-***combine files into file***
+*combine files into file*
 ```js
 filesIntoOne(['test/1.css', 'test/3.css'], 'test2/bundle.css', true)
 // Files are bundle it ->  test2/bundle.css
