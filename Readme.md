@@ -34,7 +34,7 @@ copyFolder('test', 'folder', true);
 // Copy folder:  new  ->  folder\new (console stdout)
 ```
 
-- **filesIntoOne(arrayOfFiles: Array<string>, destinatonFile: string): void**  
+- **filesIntoOne(arrayOfFiles: Array<string>, destinatonFile, writeToConsole?: boolean): void**  
 *combine files into file*
 ```js
 filesIntoOne(['test/1.css', 'test/3.css'], 'test2/bundle.css', true)
