@@ -1,14 +1,14 @@
-# 📑 fs-xtra  
+# 📑 xtra-fs  
 fs extra methods for nodejs
 
-![](https://badgen.net/bundlephobia/min/node-rm)  ![](https://badgen.net/npm/v/node-rm)
+![](https://badgen.net/bundlephobia/min/xtra-fs)  ![](https://badgen.net/npm/v/xtra-fs)
 ```js
-npm i fs-xtra --save-dev
+npm i xtra-fs --save-dev
 ```
 
 ### Usage
 ```
-const { copyFolder, copyFiles, filesIntoOne } = require('fs-xtra');
+const { copyFolder, copyFiles, filesIntoOne } = require('xtra-fs');
 ```
 
 ### Methods and examples

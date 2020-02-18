@@ -1,5 +1,5 @@
 {
-  "name": "fs-xtra",
+  "name": "xtra-fs",
   "version": "1.0.0",
   "description": "fs extra methods",
   "main": "src/index.js",
@@ -21,10 +21,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haikelfazzani/fs-xtra.git.git"
+    "url": "git+https://github.com/haikelfazzani/xtra-fs.git.git"
   },
   "bugs": {
-    "url": "https://github.com/haikelfazzani/fs-xtra.git/issues"
+    "url": "https://github.com/haikelfazzani/xtra-fs.git/issues"
   },
-  "homepage": "https://github.com/haikelfazzani/fs-xtra.git#readme"
+  "homepage": "https://github.com/haikelfazzani/xtra-fs.git#readme"
 }
