@@ -8,11 +8,11 @@ npm i xtra-fs --save-dev
 
 ### Usage
 ```
-const { copyFolder, copyFiles, filesIntoOne } = require('xtra-fs');
+const { copyFolder, copyFiles, filesIntoOne, isEmptyDir, isEmptyDirSync } = require('xtra-fs');
 ```
 
 ### Methods and examples
-- **copyFiles(arrayOfFiles: Array, writeToConsole?: boolean): void**  
+- **copyFiles(arrayOfFiles, writeToConsole?: boolean): void**  
 *Copy files into folder*
 ```js
 // writeToConsole by default: false
@@ -34,11 +34,25 @@ copyFolder('test', 'folder', true);
 // Copy folder:  new  ->  folder\new (console stdout)
 ```
 
-- **filesIntoOne(arrayOfFiles: Array<string>, destinatonFile, writeToConsole?: boolean): void**  
+- **filesIntoOne(arrayOfFiles, destinatonFile, writeToConsole?: boolean): void**  
 *combine files into file*
 ```js
 filesIntoOne(['test/1.css', 'test/3.css'], 'test2/bundle.css', true)
 // Files are bundle it ->  test2/bundle.css
+```
+
+- **isEmptyDir(directoryPath): Promise<boolean>**  
+*check if the existing directory is empty or not*
+```js
+isEmptyDir(__dirname + '/my-dir-path')
+  .then(result => console.log(result)) // true or false
+  .catch(error => console.log(error)) // null
+```
+
+- **isEmptyDirSync(directoryPath): boolean**  
+*check if the existing directory is empty or not*
+```js
+isEmptyDirSync(__dirname + '/another-path') // true or false
 ```
 
 ### Note
